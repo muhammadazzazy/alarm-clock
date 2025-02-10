@@ -38,16 +38,17 @@ def main() -> None:
                         break
 
                 playsound.playsound(file_path)
+
             else:
                 print('Invalid input...')
-
-        except playsound.PlaysoundException:
-            print('Invalid file path...')
-            continue
 
         except ValueError:
             print('Invalid time...')
             continue
+
+        except playsound.PlaysoundException:
+            print('Invalid file path...')
+            exit()
 
         except KeyboardInterrupt:
             print('Exiting...')
