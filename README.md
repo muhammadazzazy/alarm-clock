@@ -10,7 +10,7 @@ python3 -m venv env
 source env/bin/activate
 ```
 
-Then, a couple Python packages need to be installed which are listed in the `requirements.txt` file using the command below:
+Then, the `playsound` Python package needs to be installed which are listed in the `requirements.txt` file using the command below:
 ```bash
 pip install -r requirements.txt
 ```
